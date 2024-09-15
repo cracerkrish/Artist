@@ -1,0 +1,495 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.row>.column {
+    padding: 0 8px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column {
+    float: left;
+    width: auto;
+}
+
+.nav h1 {
+    font-size: 48px;
+    font-family: system-ui;
+    font-style: italic;
+    font-weight: 200;
+    color: #808b96;
+    padding: 5px;
+}
+
+.nav {
+    margin-top: 50px;
+}
+
+ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+li a {
+    display: inline-block;
+    color: #707b7c;
+    text-decoration: none;
+    padding: 8px 10px 0px 10px;
+    font-size: 20px;
+    font-family: system-ui;
+    font-style: italic;
+    font-weight: 300;
+}
+
+li a:hover {
+    color: #0894da;
+}
+
+li {
+    display: inline;
+    list-style: none;
+
+}
+
+.title {
+    margin-top: 50px;
+}
+
+.title h2 {
+    text-align: center;
+    font-family: system-ui;
+    font-weight: 275;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 470px 470px;
+    grid-template-rows: auto;
+    place-content: center;
+    place-items: center;
+    margin-top: 20px;
+}
+
+.grid-item {
+    padding: 2px;
+    transition: transform .8s;
+}
+
+
+.grid-item img {
+    padding: 2px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.grid-item:hover {
+    -ms-transform: scale(0.9);
+    /* IE 9 */
+    -webkit-transform: scale(0.9);
+    /* Safari 3-8 */
+    transform: scale(0.9);
+}
+
+.modal {
+    padding-top: 50px;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: white;
+}
+
+.modal-content {
+
+    position: relative;
+    background-color: white;
+    margin: auto;
+    padding: 0;
+    width: 100%;
+}
+
+/* The Close Button */
+.close {
+    color: rgb(37, 35, 35);
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 45px;
+}
+
+.close:hover,
+.close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.mySlides {
+    display: grid;
+    grid-template-columns: 500px 500px;
+    grid-template-rows: auto;
+    /* Adjust rows for close button, content, and caption */
+    /* align-items: center; */
+    justify-content: center;
+    padding: 10px;
+    gap: 60px;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: fixed;
+    top: 50%;
+    width: 50px;
+    padding: 16px;
+    margin-top: -50px;
+    color: rgb(127, 117, 117);
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.demo {
+    opacity: 0.6;
+    height: 200px;
+    width: 150px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+.description h3 {
+    margin-top: 80px;
+    font-family: system-ui;
+    font-size: 20px;
+    font-weight: 350;
+}
+
+.description p {
+    font-family: system-ui;
+    font-size: 20px;
+    font-weight: 278;
+}
+
+.about {
+    padding: 30px;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 560px 560px;
+    place-content: center;
+    place-items: center;
+    background-color: #dae3e4;
+    border-radius: 5px;
+}
+
+.content {
+    place-content: center;
+}
+
+.content p {
+    font-size: 20px;
+}
+
+.content h3 {
+    font-size: 28px;
+}
+
+.last_grid {
+    display: grid;
+    grid-template-columns: 587px 587px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 30px;
+    place-content: center;
+    place-items: center;
+}
+
+.contact {
+    width: 500px;
+    padding: 5px;
+}
+
+.label {
+    font-size: 18px;
+}
+
+.place {
+    width: 450px;
+    height: 45px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 5px;
+}
+
+.textarea {
+    width: 450px;
+    height: 145px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.submit {
+    width: 70px;
+    height: 40px;
+    background-color: #dae3e4;
+    color: rgb(18, 5, 5);
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+.titls h3 {
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.titls p {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 30px 30px 30px 30px;
+    gap: 25px;
+    margin-top: 5px;
+}
+
+
+.follow h3 {
+    font-size: 25px;
+    font-weight: 400;
+}
+
+
+.social img {
+    width: 50px;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.para p {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.final {
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 250;
+}
+
+@media (max-width: 500px) {
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .head {
+        width: 100%;
+    }
+
+    .title {
+        width: 100%;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .grid-item img {
+        width: 100%;
+    }
+
+    /* .modal {
+        width: 100%;
+    } */
+
+    .mySlides {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        height: auto;
+    }
+
+    .slide {
+        width: 100%;
+    }
+
+    .prev .next {
+        width: 100%;
+    }
+
+    .description {
+        width: 100%;
+    }
+
+    .column .demo {
+        width: auto;
+    }
+
+    .about {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .agusta img {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    .last_grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .contact {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .details {
+        width: 100%;
+    }
+
+    .final {
+        width: auto;
+    }
+}
+
+@media (min-width:500px) and (max-width:800px) {
+    .head {
+        width: 100%;
+
+    }
+
+    .title {
+        width: 100%;
+
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr;
+
+    }
+
+    .grid-item img {
+        width: 492px;
+    }
+
+    .modal {
+        width: 100%;
+    }
+
+    .mySlides {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        place-items: center;
+        gap: 0px;
+    }
+
+    .column .demo {
+        width: auto;
+    }
+
+    .about {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .agusta img {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    .last_grid {
+        display: grid;
+        grid-template-columns: 750px;
+        grid-template-rows: auto;
+    }
+
+    .contact {
+        display: grid;
+        width: 100%;
+        margin-bottom: 40px;
+        place-items: center;
+        width: fit-content;
+    }
+
+    .titls h3 {
+        margin-left: 90px;
+        margin-bottom: 10px;
+    }
+
+    .titls p {
+        margin-bottom: 20px;
+    }
+
+    .place {
+        width: 600px;
+    }
+
+    .textarea {
+        width: 600px;
+    }
+
+    .details {
+        width: 100%;
+    }
+
+    .final {
+        width: auto;
+    }
+}

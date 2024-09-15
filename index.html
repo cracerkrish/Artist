@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Artist</title>
+</head>
+
+<body>
+    <div class="head" id="home">
+
+        <div class="nav">
+            <ul>
+                <h1>Augusta Peris</h1>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="title">
+        <h2>Modern Art</h2>
+    </div>
+
+    <div class="image-container">
+        <div class="grid-container">
+            <div class="grid-item">
+                <img id="myImg" onclick="openModal();currentSlide(1)" src="illustration2.png" alt="illustration2">
+            </div>
+            <div class="grid-item">
+                <img id="myImg" onclick="openModal();currentSlide(2)" src="illustration4.png" alt="illustration4">
+            </div>
+            <div class="grid-item">
+                <img id="myImg" onclick="openModal();currentSlide(3)" src="illustration3.png" alt="illustration3">
+            </div>
+            <div class="grid-item">
+                <img id="myImg" onclick="openModal();currentSlide(4)" src="illus1.png" alt="illustration1">
+            </div>
+            <div class="grid-item">
+                <img id="myImg" onclick="openModal();currentSlide(5)" src="illustration5.png" class='cloud'
+                    alt="illustration5">
+            </div>
+            <div class="grid-item">
+                <img id="myImg" onclick="openModal();currentSlide(6)" src="illustration6.png" alt="illustration6">
+            </div>
+            <div class="grid-item">
+                <img id="myImg" onclick="openModal();currentSlide(7)" src="illustration7.png" alt="illustration7">
+            </div>
+            <div class="grid-item">
+                <img id="myImg" onclick="openModal();currentSlide(8)" src="illustration8.png" alt="illustration8">
+            </div>
+            <div class="grid-item">
+                <img id="myImg" onclick="openModal();currentSlide(9)" src="illustration9.png" alt="illustration9">
+            </div>
+            <div class="grid-item">
+                <img id="myImg" onclick="openModal();currentSlide(10)" src="illus10.png" alt="illustration10">
+            </div>
+        </div>
+        <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+
+                <div class="mySlides">
+                    <div class="slide">
+                        <img src="illustration2.png" alt="illustration2">
+                    </div>
+                    <div class="description">
+                        <h3>Blue Horizons</h3><br>
+                        <p>
+                            The artwork primarily uses shades of blue,
+                            ranging from pale to deep. This creates a calming and
+                            serene atmosphere, often associated with the sky, water,
+                            and peace. The addition of white for the background and
+                            subtle accents of gray or black for the darker areas adds
+                            depth and contrast.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mySlides">
+                    <div class="slide">
+                        <img src="illustration4.png" alt="illustration4">
+                    </div>
+                    <div class="description">
+                        <h3>Cozy Cat</h3><br>
+                        <p>
+                            The artwork primarily uses warm tones, with a dominant orange for the cat and
+                            a complementary yellow for the basket. This color combination creates a cheerful and
+                            inviting atmosphere. The touch of white on the cat's chest and the basket further adds
+                            to the sense of warmth and brightness.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mySlides">
+                    <div class="slide">
+                        <img src="illustration3.png" alt="illustration3">
+                    </div>
+                    <div class="description">
+                        <h3>Floral Delight</h3><br>
+                        <p>
+                            The artwork primarily uses soft, pastel shades of pink and green.
+                            These colors create a gentle, feminine, and calming atmosphere.
+                            The use of white and black for the outlines and accents adds
+                            contrast and definition.The pastel colors and floral imagery
+                            suggest the arrival of spring and new beginnings.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mySlides">
+                    <div class="slide">
+                        <img src="illus1.png" alt="illus1">
+                    </div>
+                    <div class="description">
+                        <h3>A World of Words</h3><br>
+                        <p>
+                            The artwork primarily uses muted, earthy tones, such as dark gray,
+                            brown, and beige. These colors create a sense of warmth and classicism,
+                            often associated with traditional literature and learning.
+                            The red book adds a pop of color, drawing the eye and perhaps symbolizing
+                            a standout work or a personal favorite.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mySlides">
+                    <div class="slide">
+                        <img src="illustration5.png" alt="illustration5">
+                    </div>
+                    <div class="description">
+                        <h3>Cityscape View</h3><br>
+                        <p>
+                            The simple background and the woman's casual attire suggest
+                            an urban setting and a contemporary lifestyle.The minimalist style and
+                            the woman's overall appearance evoke a sense of youth and modernity.
+                            The texture of the artwork is primarily smooth and clean.
+                            The use of bold outlines and flat colors creates a clean, graphic look.
+                            There are no textured elements or shading to suggest depth or dimension.
+                            This smooth texture contributes to the overall minimalist and
+                            modern aesthetic of the piece.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mySlides">
+                    <div class="slide">
+                        <img src="illustration6.png" alt="illustration6">
+                    </div>
+                    <div class="description">
+                        <h3>Solitude Tree</h3><br>
+                        <p>
+                            The peaceful and serene atmosphere created by the soft colors and
+                            the tree's solitary presence suggests a connection to nature and
+                            a sense of tranquility.
+                            The single tree evoke feelings of solitude or introspection,
+                            inviting the viewer to contemplate their own place in the world.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mySlides">
+                    <div class="slide">
+                        <img src="illustration7.png" alt="illustration7">
+                    </div>
+                    <div class="description">
+                        <h3>Retro Note</h3><br>
+                        <p>
+                            The artwork uses a soft, pastel-like purple hue throughout.
+                            Purple is often associated with creativity, nostalgia,
+                            and emotional depth. The use of a single color simplifies the
+                            visual message while giving it a calming, dreamy aesthetic,
+                            invoking memories or feelings associated with music from the past.
+                            This piece is a celebration of retro or vintage technology,
+                            a tribute to the cassette tape's role in shaping music culture,
+                            from mix-tapes to early music collections.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mySlides">
+                    <div class="slide">
+                        <img src="illustration8.png" alt="illustration8">
+                    </div>
+                    <div class="description">
+                        <h3>Seize the Day</h3><br>
+                        <p>
+                            The clock is primarily green with a cream-colored face and blue accents,
+                            giving it a modern, fresh look. These colors are soft yet vibrant,
+                            suggesting a positive and motivating tone without being overly intense.
+                            The background is neutral gray with subtle textures, ensuring that the
+                            focus remains entirely on the clock. This minimalist backdrop emphasizes
+                            the clarity and simplicity of the message.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mySlides">
+                    <div class="slide">
+                        <img src="illustration9.png" alt="illustration9">
+                    </div>
+                    <div class="description">
+                        <h3>Autumn Warmth</h3><br>
+                        <p>
+                            The dominant colors, pink for the car and yellow for the lightbulb,
+                            convey a cheerful and optimistic tone. These bright, soft colors are
+                            visually engaging and approachable, likely aiming to evoke positive
+                            emotions.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mySlides">
+                    <div class="slide">
+                        <img src="illus10.png" alt="illus10">
+                    </div>
+                    <div class="description">
+                        <h3>Aloof</h3><br>
+                        <p>
+                            The watercolor texture of the background adds a soothing, organic feel, giving the artwork a
+                            light,
+                            calming, and nature-inspired aesthetic.
+                            This style of art is often associated with themes of simplicity, natural beauty, and
+                            tranquility.
+                            The balance between the soft, flowing background and the sharp, defined leaves provides a
+                            contrast
+                            that enhances the visual appeal while maintaining a serene tone.
+                        </p>
+                    </div>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+
+
+                <div class="column">
+                    <img class="demo cursor" src="illustration2.png" onclick="currentSlide(1)" alt="illustration2">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="illustration4.png" onclick="currentSlide(2)" alt="illustration4">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="illustration3.png" onclick="currentSlide(3)" alt="illustration3">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="illus1.png" onclick="currentSlide(4)" alt="illus1">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="illustration5.png" onclick="currentSlide(4)" alt="illustration5">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="illustration6.png" onclick="currentSlide(4)" alt="illustration6">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="illustration7.png" onclick="currentSlide(4)" alt="illustration7">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="illustration8.png" onclick="currentSlide(4)" alt="illustration8">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="illustration9.png" onclick="currentSlide(4)" alt="illustration9">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="illus10.png" onclick="currentSlide(4)" alt="illus10">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="about" id="about">
+
+        <div class="agusta">
+            <img src="Augusta Peris.png" alt="peris">
+        </div>
+        <div class="content">
+            <h3>Augusta Peris</h3>
+            <p>
+                Style: Modern Art<br>
+                Description: Known as the "Modern Minimalist," Augusta Peris work focused on
+                distinctive view, imagination, and fantasy.
+                Her distinctive style transformed natural forms into abstracted, simply digging into the
+                perspectives.<br>
+
+                Modern minimalist art is a style that emphasizes simplicity, clarity, and the use of the most basic
+                elements to convey a concept or emotion.
+                It is characterized by its focus on reducing artwork to its essential components, often eliminating
+                excess details, colors, and textures to highlight form, space, and composition. <br>
+                Her works showcases simple and yet abstract, digs a lot to convey the things. Thats her key factor in
+                every artwork and amuses us all, in the work.
+            </p>
+        </div>
+
+
+    </div>
+
+
+    <div class="last_grid">
+        <div class="contact" id="contact">
+            <div class="titls">
+                <h3>Contact</h3>
+                <p>augustaperis@mail.com | 123-456-7890</p>
+            </div>
+            <div class="frm">
+                <form id="myForm">
+                    <label for="fname" class="label">First Name:</label><br>
+                    <input type="text" id="fname" class="place" placeholder="Your name.." required><br>
+
+                    <label for="lname" class="label">Last Name:</label><br>
+                    <input type="text" id="lname" class="place" placeholder="Your last name.." required><br>
+
+                    <label for="phone" class="label">Phone:</label><br>
+                    <input type="number" id="lname" class="place" placeholder="Enter your number.."><br>
+
+                    <label for="Message" class="label">Enter Your Message:</label><br>
+                    <textarea name="message" rows="10" class="textarea" cols="30" placeholder="Communicate with me.."
+                        required></textarea><br>
+
+                    <input type="submit" id="mybutton" class="submit" onclick="myFunction()" value="Submit">
+                </form>
+            </div>
+
+        </div>
+        <div class="details">
+            <div class="follow">
+                <h3>Follow Us</h3>
+            </div>
+            <div class="footer">
+                <div class="social social-fb">
+                    <a href="https://www.facebook.com/"><img src="fb.png" alt="fb"></a>
+                </div>
+                <div class="social social-insta">
+                    <a href="https://www.instagram.com/"><img src="insta.png" alt="insta"></a>
+                </div>
+                <div class="social social-reddit">
+                    <a href="https://www.reddit.com/"><img src="reddit_logo.png" alt="reddit"></a>
+                </div>
+                <div class="social social-pin">
+                    <a href="https://in.pinterest.com/"><img src="pin.png" alt="pin"></a>
+                </div>
+            </div>
+            <div class="para">
+                <p>
+                    An artist who works in the modern minimalist style is often someone deeply focused on the essence of
+                    form, function, and simplicity.
+                    They are typically inspired by the philosophy of "less is more," valuing clarity, precision, and
+                    intentionality in their work.
+                    These artists prioritize the use of clean lines, geometric shapes, and limited color palettes,
+                    stripping away distractions to convey pure meaning.<br>
+                    The artwork is often abstracted to its simplest form, with the focus being on the overall structure
+                    rather than intricate details.
+                    This allows viewers to interpret the meaning more freely, concentrating on the essence of the piece.
+                    Their work often invites introspection, as it emphasizes the relationship between the object, space,
+                    and viewer. Minimalist artists may explore how simple elements can evoke emotion or provoke thought
+                    without the need for excessive detail.<br>
+                    Minimalist artworks frequently employ monochromatic or very limited color schemes.
+                    They are driven by the challenge of creating depth through reduction, and often seek to find beauty
+                    in simplicity.
+                    Overall, such an artist tends to be deliberate, restrained, and methodical, focusing on purity of
+                    form and conceptual clarity, while also being open to exploring how minimalism interacts with space,
+                    perception, and emotion.
+                </p>
+            </div>
+        </div>
+
+    </div>
+    <div class="final">
+        <p>&copy; 2024 Augusta Peris. All rights reserved.</p>
+    </div>
+
+    <script>
+        function openModal() {
+            document.getElementById("myModal").style.display = "grid";
+        }
+
+        function closeModal() {
+            document.getElementById("myModal").style.display = "none";
+        }
+
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "grid";
+            dots[slideIndex - 1].className += " active";
+
+        }
+        function myFunction() {
+            document.getElementById("myForm").reset();
+        }
+        const button = document.getElementById('mybutton');
+        button.addEventListener('click', function () {
+            alert('Form Submitted!');
+        });
+    </script>
+</body>
+
+</html>
