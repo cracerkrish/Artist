@@ -329,9 +329,7 @@
                         <br>
 
                         <label for="Message" class="label">Enter Your Message:</label><br>
-                        <textarea name="message" rows="10" class="textarea" cols="30"
-                            placeholder="Communicate with me.." id="msg">
-                        </textarea>
+                        <input type="text" id="message" name="message" class="textarea">
 
                         <br>
 
@@ -441,26 +439,17 @@
             let z = document.forms["myForm"]["phone"].value;
             let a = document.forms["myForm"]["message"].value;
 
-            if (x == "") {
-                alert("First name must be filled out");
+            if (x && y === "" || z === "" || a === "") {
+                alert("Form must be filled out");
                 return false;
             }
-            if (y == "") {
-                alert("Last name must be filled out");
-                return false;
-            }
-            if (z == "") {
-                alert("Phone number must be filled out");
-                return false;
-            }
-            if (a == "") {
-                alert("Message must be filled out");
-                return false;
-            }
+
             else {
-                document.getElementById("frm").reset();
                 alert("Form submitted successfully");
             }
+
+            document.getElementById("frm").reset();
+
 
         }
     </script>
