@@ -192,7 +192,7 @@ li {
 
 .active,
 .demo:hover {
-    opacity: 1;
+    opacity: 1.5;
 }
 
 .description h3 {
@@ -231,14 +231,15 @@ li {
     font-size: 28px;
 }
 
-.last_grid {
+.last-grid {
     display: grid;
-    grid-template-columns: 587px 587px;
+    grid-template-columns: 560px 560px;
     margin-top: 20px;
     margin-bottom: 20px;
     padding: 30px;
     place-content: center;
     place-items: center;
+    gap: 30px;
 }
 
 .contact {
@@ -270,7 +271,7 @@ li {
     width: 70px;
     height: 40px;
     background-color: #ffff;
-    color: rgb(18, 5, 5);
+    color: rgb(20, 21, 21);
     border-radius: 5px;
     font-weight: 500;
 }
@@ -317,42 +318,58 @@ li {
     font-weight: 250;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 375px) {
     * {
         margin: 0px;
         padding: 0px;
     }
 
     .head {
-        width: 100%;
+        width: auto;
     }
 
     .title {
-        width: 100%;
+        width: auto;
     }
 
     .grid-container {
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        place-content: center;
+        place-items: center;
+    }
+
+    .grid-item {
+        width: auto;
     }
 
     .grid-item img {
-        width: 100%;
+        width: 300px;
     }
 
-    /* .modal {
-        width: 100%;
-    } */
+    .modal-content {
+        margin-top: 20px;
+    }
 
     .mySlides {
         display: grid;
         grid-template-columns: auto;
         grid-template-rows: auto;
         height: auto;
+        place-content: center;
+        place-items: center;
+        gap: 20px;
     }
 
-    .slide {
-        width: 100%;
+    .slide img {
+        width: 300px;
+    }
+
+    .demo {
+        height: 100px;
+        width: 75px;
+        padding: 3px;
     }
 
     .prev .next {
@@ -360,7 +377,16 @@ li {
     }
 
     .description {
-        width: 100%;
+        width: auto;
+    }
+
+    .description h3 {
+        margin-top: 0px;
+        text-align: center;
+    }
+
+    .description p {
+        text-align: center;
     }
 
     .column .demo {
@@ -368,33 +394,88 @@ li {
     }
 
     .about {
+        padding-top: 30px;
+        margin-top: 50px;
         display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
+        grid-template-columns: auto;
+        place-content: center;
+        place-items: center;
+        background-color: #dae3e4;
+        border-radius: 5px;
     }
 
     .agusta img {
-        width: 100%;
+        width: 300px;
         margin-bottom: 40px;
     }
 
     .content {
-        width: 100%;
+        width: 300px;
     }
 
-    .last_grid {
+
+    .last-grid {
         display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
+        grid-template-columns: 300px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 10px;
+        place-content: center;
+        place-items: center;
+        gap: 0px;
     }
 
     .contact {
-        width: 100%;
-        margin-bottom: 40px;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        margin-top: 30px;
+        margin-bottom: 0px;
+        width: 300px;
+        place-items: center;
+        place-content: center;
+
     }
 
+    .place {
+        width: 300px;
+        height: 45px;
+        margin-bottom: 20px;
+        padding: 5px;
+    }
+
+
+    .textarea {
+        width: 300px;
+        height: 145px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 5px;
+    }
+
+
     .details {
-        width: 100%;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+        width: 300px;
+        margin-top: 30px;
+        margin-bottom: 40px;
+        place-items: center;
+        place-content: center;
+    }
+
+    .para p {
+        text-align: center;
+        width: 300px;
+    }
+
+    .titls h3 {
+        text-align: center;
+    }
+
+    .titls p {
+        text-align: center;
     }
 
     .final {
@@ -402,94 +483,8 @@ li {
     }
 }
 
-@media (min-width:500px) and (max-width:800px) {
-    .head {
+@media (max-width:1440px) {
+    .page {
         width: 100%;
-
-    }
-
-    .title {
-        width: 100%;
-
-    }
-
-    .grid-container {
-        display: grid;
-        grid-template-columns: 1fr;
-
-    }
-
-    .grid-item img {
-        width: 492px;
-    }
-
-    .modal {
-        width: 100%;
-    }
-
-    .mySlides {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        place-items: center;
-        gap: 0px;
-    }
-
-    .column .demo {
-        width: auto;
-    }
-
-    .about {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-    }
-
-    .agusta img {
-        width: 100%;
-        margin-bottom: 40px;
-    }
-
-    .content {
-        width: 100%;
-    }
-
-    .last_grid {
-        display: grid;
-        grid-template-columns: 750px;
-        grid-template-rows: auto;
-    }
-
-    .contact {
-        display: grid;
-        width: 100%;
-        margin-bottom: 40px;
-        place-items: center;
-        width: fit-content;
-    }
-
-    .titls h3 {
-        margin-left: 90px;
-        margin-bottom: 10px;
-    }
-
-    .titls p {
-        margin-bottom: 20px;
-    }
-
-    .place {
-        width: 600px;
-    }
-
-    .textarea {
-        width: 600px;
-    }
-
-    .details {
-        width: 100%;
-    }
-
-    .final {
-        width: auto;
     }
 }
